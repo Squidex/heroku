@@ -56,5 +56,11 @@
         "plan": "ormongo:2-wt",
         "as": "MONGO"
       }
-    ]
+    ],
+    "buildpacks": [
+      {
+        "url": "heroku/go"
+      }
+    ],
+    "stack": "container"
   }
