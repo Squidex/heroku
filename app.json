@@ -21,22 +21,28 @@
         "description": "The number of processes to run."
       },
       "IDENTITY__GOOGLECLIENT": {
-        "description": "The number of processes to run."
+        "description": "The number of processes to run.",
+        "required": false
       },
       "IDENTITY__GOOGLESECRET": {
-        "description": "The number of processes to run."
+        "description": "The number of processes to run.",
+        "required": false
       },
       "IDENTITY__GITHUBCLIENT": {
-        "description": "The number of processes to run."
+        "description": "The number of processes to run.",
+        "required": false
       },
       "IDENTITY__GITHUBSECRET": {
-        "description": "The number of processes to run."
+        "description": "The number of processes to run.",
+        "required": false
       },
       "IDENTITY__MICROSOFTCLIENT": {
-        "description": "The number of processes to run."
+        "description": "The number of processes to run.",
+        "required": false
       },
       "IDENTITY__MICROSOFTSECRET": {
-        "description": "The number of processes to run."
+        "description": "The number of processes to run.",
+        "required": false
       }
     },
     "formation": {
@@ -47,7 +53,7 @@
     },
     "addons": [
       {
-        "plan": "mongolab:shared-single-small",
+        "plan": "ormongo:2-wt",
         "as": "MONGO"
       }
     ]
